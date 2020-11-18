@@ -19,6 +19,10 @@ $(document).ready(function(){
         }
     });
     
+    $("#number").on("change", function(e) {
+        $("#error").empty();
+    });
+    
     async function getQuotes(count) {
         
         $("#quotes").empty();
